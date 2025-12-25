@@ -3,18 +3,17 @@ import type { NavigationMenuItem } from "@nuxt/ui";
 
 const items: NavigationMenuItem[] = [
   {
-    label: "Home",
+    label: "I-CHING",
     to: "/",
     active: true,
   },
   {
-    label: "Inbox",
+    label: "CTM(Chinese Traditional Medicine)",
+    to: "/ctm",
   },
   {
-    label: "Contacts",
-  },
-  {
-    label: "Settings",
+    label: "J-POP",
+    to: "/j-pop",
   },
 ];
 
@@ -55,7 +54,7 @@ const sidebarCollapsed = ref(false);
     <UDashboardPanel>
       <!-- Header 插槽: 顶部导航栏 -->
       <template #header>
-        <UDashboardNavbar title="Dashboard">
+        <UDashboardNavbar title="Gohoy's interests">
           <template #right>
             <!-- 右侧操作按钮 -->
             <UButton icon="i-lucide-bell" color="neutral" variant="ghost" />
